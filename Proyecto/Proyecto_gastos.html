@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculo ISR IVA</title>
+        <meta charset="utf-8">
+        <script src="JavaScript/Proyectos.js"></script>
+        <link rel="icon" href="imgs_pro/1813846.ico">
+        <link rel="stylesheet" type="text/css" href="css/Proyecto.css">
+    </head>
+    <body>
+    <div>
+
+                <form class="Formulario">
+                <h2 class="titulo">Ingresos</h2>
+                <p class="Parrafo">
+                    Agregar un nuevo Proveedor <a href="InterfazderegistroProv.html" class="link">Entra Aqui</a>
+                </p>
+                <div class="ingresa__datos">
+                    <div class="datos">
+                          <select class ="from_select">
+                            <option selected="selected" >Selecciona un mes</option>
+                            <option>Enero</option> <option>Febrero</option> <option>Marzo</option> <option>Abril</option>
+                            <option>Mayo</option> <option>Junio</option> <option>Julio</option> <option>Agosto</option> 
+                            <option>Septiembre</option> <option>Octubre</option> <option>Noviembre</option> <option>Diciembre</option>
+                          </select>
+                </div> 
+                <div class="datos"> 
+                    <input type="text" id="fecha_Emision" class="from_input" placeholder=" ">
+                    <label for="fecha_Emision" class="form_lable"> Fecha de Emision:</label>
+                    <span class="form_linea"></span>
+                </div> 
+                <div class="datos"> 
+                    <input type="text" id="Folio" class="from_input" placeholder=" ">
+                    <label for="folio" class="form_lable"> Folio:</label>
+                    <span class="form_linea"></span>
+                
+                </div>
+                <div class="datos"> 
+                    <select class ="from_select">
+                        <option selected="selected" >Proveedor</option>
+                        <option>APPLE OPERATIONS MEXICO S.A. DE C.V. </option> <option>GRUPO FERCHE SA DE CV</option> <option>AUTOS GLOBALES, S. A. DE C. V</option> 
+                        <option>ESTACION DE SERVICIO PALO GACHO S.A. DE C.V.</option> <option>CELEGAS SA DE CV</option> <option>CENTRO GASOLINERO ANIMAS S.A. DE C.V.</option> 
+                        <option>OFIX S.A DE C.V.</option> <input type="button" class="mas" value=+ onclick="rehGas()">
+                      </select>
+                
+                </div>
+                <div class="datos"> <!--Calcuado-->
+                    <input type="text" id="RFC" class="from_input" placeholder=" ">
+                    <label for="RFC" class="form_lable"> RFC:</label>
+                    <span class="form_linea"></span>
+                
+                </div>
+                <div class="datos"> 
+                    <input type="text" id="no_factura" class="from_input" placeholder=" ">
+                    <label for="no_factura" class="form_lable"> No Factura:</label>
+                    <span class="form_linea"></span>
+                
+                </div>
+               <div class="datos"onchange="totalGastos()"> 
+                    <input type="text" id="gastos_totales" class="from_input" placeholder=" ">
+                    <label for="gastos_totales" class="form_lable"> Gastos Totales:</label>
+                    <span class="form_linea"></span>
+                
+                </div>
+               <div class="datos"onchange="totalGastos()"> 
+                    <input type="text" id="IVA" class="from_input" placeholder=" ">
+                    <label for="IVA" class="form_lable"> IVA:</label>
+                    <span class="form_linea"></span>
+                
+                </div>
+               <div class="datos"onchange="totalGastos()"> <!--Calcuado-->
+                    <input type="text" id="tasa_16" class="from_input" placeholder=" ">
+                    <label for="tasa_16" class="form_lable"> Tasa 16% :</label>
+                    <span class="form_linea"></span>
+                
+                </div>
+               <div class="datos"onchange="totalGastos()"> <!--Calcuado-->
+                    <input type="text" id="tasa_0" class="from_input" placeholder=" ">
+                    <label for="tasa_0" class="form_lable"> Tasa 0%:</label>
+                    <span class="form_linea"></span>
+                
+                </div>
+                <div class="datos" onchange="totalGastos()"> <!--Calcuado-->
+                    <input type="text" id="total_gas" class="from_input" placeholder=" ">
+                    <label for="total_gas" class="form_lable"> Total:</label>
+                    <span class="form_linea"></span>
+                
+                </div>
+                <input type="submit" class="submit" value ="Guardar">
+                <input type="button" class="salir" value =Salir onclick="salir()">
+                
+            </form>
+   
+           
+            </div>
+      
+    </body>
+    <footer>
+    </footer>
+</html>

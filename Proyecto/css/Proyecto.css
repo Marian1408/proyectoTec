@@ -1,0 +1,331 @@
+body{
+    background-color: #fff;
+
+    background-image: radial-gradient(rgb(255, 255, 255) 0.5px, rgb(255, 255, 255) 0.5px);
+    background-size: 10px 10px;
+}
+#block4 {
+    background:url(7b2bd3fec51d15739ba13b1e3dc67636.jpg);
+    border:3px solid #542437;
+    font-family:Georgia,"Times New Roman",Times,serif;
+        margin:20px 0px;
+    padding:20px;
+
+}
+#block4 h1 {
+    font-size:190%;
+    letter-spacing:0px;
+    line-height:42px;
+    margin:0 0 10px;
+    text-align:center;
+    text-transform:uppercase;
+}  
+ 
+#block4 h1 a{
+    color:#542437
+}  
+ 
+#block4 h5 a{
+    color:#542437
+}  
+ 
+#block4 h5 {
+    border-bottom:px solid #4C4C4C;
+    border-top:1px solid #4C4C4C;
+    color:#6A6969;
+    font-size:13px;
+    font-weight:100;
+    letter-spacing:3px;
+    line-height:21px;
+    padding:5px 0;
+    text-transform:uppercase;
+}
+#block4 .title-wrap{
+    background:url();
+    padding:10px;
+    border:1px solid #542437;
+}
+header{
+    position: absolute;
+    float: left;
+    top:0;
+    left: 10;
+    width: 100%;
+    padding: 7.8% 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end ;
+    z-index: 10000;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20%;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 15% 15%;
+    color:#3866f2;
+    border-radius: 40px;
+	transition: background-color .3s, color .3s;
+}
+
+header ul li a:hover,
+header ul li a.activo{
+    background: #fff;
+    color: black;
+}
+
+.Formulario{
+    background-color: #ffff;
+    margin: auto;
+    width: 90%;
+    max-width: 400%;
+    padding: 4.5em 3em;
+    box-shadow:  0 5px 10px -5px rgb(0 0 0 / 30%) ;
+    text-align: center;
+}
+.titulo{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.Parrafo{
+    font-weight: 300;
+}
+.link{
+font-weight: 400;
+color: #000;
+}
+.ingresa__datos{
+    margin-top: 3em;
+    display: grid;
+    gap:2.5em;
+}
+.datos{
+    position: relative;
+    --color:#5757577e;
+}
+.from_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color) ;
+}
+.from_input_focus + .form_lable, .from_input:not(:placeholder-shown)+ .form_lable{
+    transform:translateY(-12px) scale(.7) ;
+    transform-origin: left top;
+    color: #3866f2;
+}
+
+.form_lable{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.submit{
+    background-color: #3866f2;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+.salir{
+    background-color: #ff0000;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+.form_linea{
+position: absolute;
+bottom:0 ;
+left: 0;
+width: 100%;
+height: 1px;
+background-color: #3866f2;
+transform: scale(0);
+transform: left bottom;
+transition: transform .4s;
+}
+from_input_focus + .form_lable, .from_input:not(:placeholder-shown) ~ .form_linea{
+    transform: scale(1);
+}
+.from_select{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color) ;
+    margin-top: 5px;
+}
+#tabla1{
+        width: 1/3%;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        position: absolute;
+        margin-left:0;
+}
+#tabla2{
+    width: 1/3%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    position: absolute;
+    margin-left: 33%;
+}
+#tabla3{
+    width: 1/3%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    position: absolute;
+    margin-left: 66%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .login-container{
+    display: flex;
+    width: 650px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+  }
+   
+  .register, .login{
+    flex: 1;
+  }
+   
+  .register{
+    padding: 40px;
+    position: relative;
+  }
+   
+  .register h2{
+    color: #797979;
+    margin-bottom: 30px;
+  }
+   
+  .register input{
+   position: relative;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #a8a8a8;
+    color: #333;
+  }
+  
+   
+  .register input:active,
+  .register input:focus{
+    outline: none;
+  }
+   
+  .register .submit{
+    width: auto;
+    padding: 10px;
+    background: #f17108;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+  }
+  .login{
+    background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+    padding: 40px;
+  }
+   
+  .login h2{
+    color: #fff;
+    margin-bottom: 45px;
+  }
+   
+  .login button i{
+    position: absolute;
+    top: 12px; 
+    left: 12px;
+  }
+   
+  .login button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .login .submit{
+    width: auto;
+    padding: 10px;
+    background: #1B2C8EFF;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+  }
+  
+  
+  
+  .login input:active,
+  .login input:focus{
+  outline: none;
+  }
+  
+   
+  .login input{
+   position: relative;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #a8a8a8;
+    color: #333;
+  }
+  
+   
+  @media only screen and (max-width: 540px){
+    .login-container{
+      display: block;
+    }
+   
+    .register, .login{
+      flex: none;
+    }
+   
+  }
+
+
